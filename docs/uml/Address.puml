@@ -1,0 +1,14 @@
+@startuml
+class Product {
+- Id : Long
+- Name : String
+- Price : double
+
++ Product()
++ Product(Id : Long, Name : String, Price : double)
+
++ getId() : Long
++ getName() : String
++ getPrice() : double
+}
+@enduml
