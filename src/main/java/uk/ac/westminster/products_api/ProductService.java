@@ -29,4 +29,8 @@ public class ProductService {
                 .filter(p -> p.getName().contains(name))
                 .toList();
     }
+    public ProductService() {
+        addProduct(new DigitalProduct(null, "E-book", 9.99, "https://example.com/ebook.pdf", 4.5));
+        addProduct(new PhysicalProduct(null, "Desk Lamp", 24.99, 1.2, "30x15x15 cm"));
+    }
 }
